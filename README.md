@@ -1,1 +1,171 @@
 # rihab_jewelry
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RIHAB JEWELRY</title>
+    <style>
+        /* Arrière-plan beige pour tout le site */
+        body {
+            margin: 0;
+            background-color: #F2ECE2;
+            font-family: 'Georgia', serif;
+            color: #5D4037;
+        }
+        /* === NOUVELLE EN-TÊTE ÉLÉGANTE === */
+        .header {
+            background-color: #F2ECE2;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(149, 110, 55, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        
+        }
+        .logo {
+            width: 220px;
+        }
+        .header-links a {
+            color: #956E37;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 30px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .header-links a:hover {
+            background-color: #956E37;
+            color: white;
+        }
+        .header button {
+            background: #956E37;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .header button:hover {
+            background: #7B5A2D;
+        }
+        /* === SECTION PRODUITS === */
+        .products-container {
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .product-card {
+            width: 240px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(149, 110, 55, 0.1);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 0 0 4px #956E37, 0 15px 35px rgba(149, 110, 55, 0.25);
+        }
+        .product-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .product-name {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 15px 12px 8px;
+            color: #5D4037;
+            line-height: 1.4;
+        }
+        .price-now {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .price-old {
+            color: #999;
+            font-size: 14 px;
+            text-decoration: line-through;
+            display: block;
+            margin-bottom: 12 px;
+        }
+        .btn-add {
+            margin-bottom: 15 px;
+            background: #956e37
+            color: white;
+            border: none;
+            padding: 11 px 30 px;
+            border-radius: 30 px;
+            font-size: 15 px;
+            cursor: pointer;
+            transition: all 0.4 s;
+        }
+        .product-card:hover .btn-add {
+            background: #956E37;
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+    <!-- EN-TÊTE ÉLÉGANTE -->
+    <div class="header">
+        <img class="logo" src="images/Capture d’écran 2025-11-23 004043.png" alt="Rihab Jewelry">
+        <div class="header-links">
+            <a href="test.html">HOME</a>
+            <a href="test.html">SHOP</a>
+            <a href="test.html">CONTACT</a>
+            <button>Sign in</button>
+        </div>
+    </div>
+
+    <!-- PRODUITS -->
+    <div class="products-container">
+
+        <div class="product-card">
+            <img src="images/bracelet-et-collier-parure-collier-bracelet-collier-bracelet_3.webp" alt="Collier">
+            <div class="product-name">Collier</div>
+            <div class="price-now">DH56.80</div>
+            <del class="price-old">DH71.00</del>
+            <button class="btn-add">Ajouter</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/700740740_1.webp" alt="Boucles d'oreilles">
+            <div class="product-name">Boucles d’oreilles</div>
+            <div class="price-now">DH46.40</div>
+            <del class="price-old">DH58.00</del>
+            <button class="btn-add">Ajouter</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/1-001-81-0212_om_2.jpg" alt="Bague">
+            <div class="product-name">Bague</div>
+            <div class="price-now">DH66.40</div>
+            <del class="price-old">DH83.00</del>
+            <button class="btn-add">Ajouter</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/montres-de-luxe-femmes-lumineuses-2019-ciel-toil-dames-robe-montre-magn-tique-pour-cadeau-montre.jpeg" alt="Montre">
+            <div class="product-name">Montre</div>
+            <div class="price-now">DH70.40</div>
+            <del class="price-old">DH88.00</,00</del>
+            <button class="btn-add">Ajouter</button>
+        </div>
+
+    </div>
+</body>
+</html> 
